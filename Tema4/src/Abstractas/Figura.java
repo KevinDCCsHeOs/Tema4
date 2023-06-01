@@ -5,6 +5,8 @@ public abstract class Figura {
 	private String nomFig;
 	private String color;
 	
+	public Figura() {}
+	
 	public Figura(String nom,String col) {
 		nomFig=nom;
 		color=col;
@@ -27,5 +29,10 @@ public abstract class Figura {
 	}
 	
 	public abstract double area();
+
+	@Override
+	public String toString() {
+		return "Figura [nomFig=" + nomFig + ", color=" + color + "]";
+	}
 	
 }
